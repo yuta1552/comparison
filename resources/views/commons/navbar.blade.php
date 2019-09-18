@@ -1,5 +1,5 @@
 <header class="mb-4">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-info">
                 <a class="navbar-brand" href="/">Comparison</a>
                 
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
