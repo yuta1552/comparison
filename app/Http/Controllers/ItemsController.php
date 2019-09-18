@@ -44,6 +44,10 @@ class ItemsController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'product' => 'required|max:191',
+            'price1' => 'required',
+            ]);
         $item = new Item;
         $item->product = $request->product;
         $item->price1 = $request->price1;
@@ -93,6 +97,10 @@ class ItemsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'product' => 'required|max:191',
+            'price1' => 'required',
+            ]);
         $item = Item::find($id);
         $item->product = $request->product;
         $item->price1 = $request->price1;
